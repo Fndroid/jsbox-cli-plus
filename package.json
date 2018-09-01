@@ -1,0 +1,45 @@
+{
+  "name": "jsbox-cli-plus",
+  "version": "1.2.1",
+  "description": "基于jsbox-cli的JSBox代码同步工具",
+  "bin": {
+    "jsbox": "./bin/jsbox"
+  },
+  "scripts": {
+    "build": "npm run lint && rimraf dist && tsc",
+    "lint": "tslint -p .",
+    "dev": "tsc -w"
+  },
+  "author": "Fndroid",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fndroid/jsbox-cli.git"
+  },
+  "keywords": [
+    "jsbox",
+    "jsbox-cli"
+  ],
+  "devDependencies": {
+    "@types/archiver": "^2.1.1",
+    "@types/chokidar": "^1.7.5",
+    "@types/form-data": "^2.2.1",
+    "@types/got": "^8.3.1",
+    "@types/lowdb": "^1.0.1",
+    "@types/node": "^10.0.4",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "archiver": "^2.1.1",
+    "chalk": "^2.4.1",
+    "chokidar": "^2.0.3",
+    "commander": "^2.15.1",
+    "form-data": "^2.3.2",
+    "got": "^8.3.1",
+    "lodash": "^4.17.10",
+    "lowdb": "^1.0.0"
+  }
+}
